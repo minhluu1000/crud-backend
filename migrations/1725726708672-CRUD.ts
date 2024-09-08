@@ -27,7 +27,7 @@ export class CRUD1725726708672 implements MigrationInterface {
               },
               {
                 name: 'price',
-                type: 'int',
+                type: 'decimal',
               },
             ],
           }));

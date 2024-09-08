@@ -6,7 +6,7 @@ export const AppDataSource = new DataSource({
   host: 'localhost',
   port: 3306,
   username: 'root',
-  password: 'Minh@39736689',
+  password: 'Minh@39736689',  // Change your MySQL account password
   database: 'test',
   entities: [Item],
   migrations: ['migrations/CRUD.ts'],
