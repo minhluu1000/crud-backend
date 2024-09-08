@@ -22,9 +22,17 @@
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
+
 ## Description
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+
+## Install Project Dependencies
+After cloning the repository, install the project dependencies by running npm install in the project directory.
+
+```bash
+npm install
+```
 
 ## Node Version
 Ensure you are using the following Node.js version. Check your node version
@@ -34,18 +42,32 @@ node -v
 ```
 
 ## Database Setup
-----Nest.js
 --Install MySQL and ensure the service is running.
--Create new database in MySQL
+Create new database in MySQL:
 
 ```bash
 CREATE DATABASE test
 ```
 
 --Configure the Database:
--Open the data-source.ts file in the NestJS project.
--Update the connection details to your database.
---
+-Open the data-source.ts and app.module.ts file in the NestJS project.
+-Update the connection details to your database. (username, password)
+
+## Run Migrations
+Run the migrations with the following command:
+
+```bash
+npx ts-node  node_modules/typeorm/cli.js migration:run --dataSource src/data-source.ts
+```
+## Start the Application
+
+ ```bash
+ npm run start
+```
+
+## API documents
+Access the API documentation at: https://docs.nestjs.com/openapi/introduction
+
 ## License
 
 Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
